@@ -1,0 +1,125 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(80, 99, 115);
+  
+}
+
+ul{
+  list-style: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav{
+  height: 50px;
+  background-color: rgb(80, 99, 115);
+  
+}
+
+nav > *{
+  float: left;
+  color: white;
+  margin-top: 0;
+  border: 1px solid black;
+}
+
+nav ul{
+  float: left;
+  width: 33%;
+}
+nav li{
+  float: left;
+}
+
+nav img{
+  width: 33%;
+  height: 50px;
+}
+nav > a{
+  width: 33%;
+  
+}
+nav li a{
+  color: white;
+}
+
+
+header, main header + section {
+ width: 80%;
+ height: 300px;
+ text-align: center;
+ margin: 0 auto;
+}
+
+main header + section {
+  width: 60%;
+  
+ }
+
+ main header + section + section > div{
+  float: left;
+  width: 50%;
+  height: 300px;
+  
+ }
+
+ header + section + section + section{
+  width: 60%;
+  
+  margin: 20px auto;
+  height: 500px;
+}
+
+main section{
+  text-align: center;
+}
+
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer section{
+  float:left;
+  width: 33%;
+  height: 200px;
+  text-align: left;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+section a{
+  padding: 10px 20px;
+  border: 2px solid rgb(80, 99, 115);
+}
